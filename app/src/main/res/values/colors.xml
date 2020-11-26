@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="movie_name_color">#ECECEC</color>
+    <color name="color_background">#191926</color>
+    <color name="movie_tag_color">#FF3466</color>
+    <color name="description_text_color">#FFFFFF</color>
+    <color name="actor_names_text_color">#D8D8D8</color>
 </resources>
