@@ -78,7 +78,7 @@
             android:layout_marginTop="254dp"
             android:elegantTextHeight="false"
             android:fontFamily="@font/roboto"
-            android:text="@string/movie_name"
+            android:text="@string/avengers_end_game"
             android:textColor="@color/movie_name_color"
             android:textSize="40sp"
             android:textStyle="bold"
@@ -89,17 +89,14 @@
 
         <TextView
             android:id="@+id/movie_tag"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:fontFamily="@font/roboto"
             android:text="@string/movie_tag"
-            android:textColor="@color/movie_tag_color"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/movie_name"
             app:layout_constraintStart_toStartOf="@+id/movie_name"
             app:layout_constraintTop_toBottomOf="@+id/movie_name"
-            app:lineHeight="20dp" />
+            app:lineHeight="20dp"
+            style="@style/pink_tag" />
 
         <ImageView
             android:id="@+id/star_1"
@@ -109,7 +106,7 @@
             android:contentDescription="@null"
             app:layout_constraintStart_toStartOf="@+id/movie_name"
             app:layout_constraintTop_toBottomOf="@+id/movie_tag"
-            app:srcCompat="@drawable/icon_star_pink" />
+            app:srcCompat="@drawable/icon_star_pink_svg" />
 
         <ImageView
             android:id="@+id/star_2"
@@ -119,7 +116,7 @@
             android:contentDescription="@null"
             app:layout_constraintStart_toEndOf="@+id/star_1"
             app:layout_constraintTop_toTopOf="@+id/star_1"
-            app:srcCompat="@drawable/icon_star_pink" />
+            app:srcCompat="@drawable/icon_star_pink_svg" />
 
         <ImageView
             android:id="@+id/star_3"
@@ -129,7 +126,7 @@
             android:contentDescription="@null"
             app:layout_constraintStart_toEndOf="@+id/star_2"
             app:layout_constraintTop_toTopOf="@+id/star_2"
-            app:srcCompat="@drawable/icon_star_pink" />
+            app:srcCompat="@drawable/icon_star_pink_svg" />
 
         <ImageView
             android:id="@+id/star_4"
@@ -139,7 +136,7 @@
             android:contentDescription="@null"
             app:layout_constraintStart_toEndOf="@+id/star_3"
             app:layout_constraintTop_toTopOf="@+id/star_3"
-            app:srcCompat="@drawable/icon_star_pink" />
+            app:srcCompat="@drawable/icon_star_pink_svg" />
 
         <ImageView
             android:id="@+id/star_5"
@@ -149,7 +146,7 @@
             android:contentDescription="@null"
             app:layout_constraintStart_toEndOf="@+id/star_4"
             app:layout_constraintTop_toTopOf="@+id/star_4"
-            app:srcCompat="@drawable/icon_star_grey" />
+            app:srcCompat="@drawable/icon_star_grey_svg" />
 
         <TextView
             android:id="@+id/movie_reviews_count"
@@ -157,13 +154,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="9dp"
             android:text="@string/movie_reviews_count"
-            android:textAllCaps="true"
-            android:textColor="@color/color_review_count"
             android:textSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/star_1"
             app:layout_constraintStart_toEndOf="@+id/star_5"
-            app:layout_constraintTop_toTopOf="@+id/star_1" />
+            app:layout_constraintTop_toTopOf="@+id/star_1"
+            style="@style/grey_text_prevs_and_duration" />
 
 
         <TextView
