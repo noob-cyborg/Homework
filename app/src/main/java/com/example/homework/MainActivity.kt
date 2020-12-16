@@ -8,11 +8,11 @@ class MainActivity : AppCompatActivity(), MyFragmentListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        supportFragmentManager.beginTransaction()
-            .add(R.id.persistent_container, FragmentMoviesList())
-            .addToBackStack(null)
-            .commit()
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.persistent_container, FragmentMoviesList())
+                .commit()
+        }
     }
 
     override fun changeToFragmentDetails() {
