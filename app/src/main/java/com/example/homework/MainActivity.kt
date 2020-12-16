@@ -23,9 +23,6 @@ class MainActivity : AppCompatActivity(), MyFragmentListener {
     }
 
     override fun changeToFragmentList() {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.persistent_container, FragmentMoviesList())
-            .addToBackStack(null)
-            .commit()
+        supportFragmentManager.popBackStack()
     }
 }
