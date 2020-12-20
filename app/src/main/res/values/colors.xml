@@ -12,4 +12,5 @@
     <color name="movie_tag_color">#FF3466</color>
     <color name="description_text_color">#FFFFFF</color>
     <color name="actor_names_text_color">#D8D8D8</color>
+    <color name="color_review_count">#6D6D80</color>
 </resources>
