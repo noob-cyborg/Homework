@@ -1,4 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="stars_margin">3dp</dimen>
+    <dimen name="cast_image_margin">8dp</dimen>
 </resources>
